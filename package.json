@@ -1,0 +1,63 @@
+{
+  "name": "quadstore-sparql",
+  "version": "5.0.2",
+  "description": "A SPARQL engine for quadstore",
+  "keywords": [
+    "node",
+    "nodejs",
+    "quadstore",
+    "graph",
+    "rdf",
+    "database",
+    "sparql",
+    "rdfjs"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm test",
+    "prepush": "npm test",
+    "test": "nyc mocha",
+    "browserify": "webpack-cli --config webpack.config.js --mode production"
+  },
+  "files": [
+    "index.js",
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beautifulinteractions/node-quadstore-sparql.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.1.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@rdfjs/data-model": "^1.1.0",
+    "babel-loader": "^8.0.4",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "husky": "^1.0.1",
+    "memdown": "^3.0.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "quadstore": "^4.0.1",
+    "should": "^13.2.3",
+    "string-replace-webpack-plugin": "^0.1.3",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "@comunica/actor-init-sparql-rdfjs": "^1.3.0"
+  },
+  "author": "Jacopo Scazzosi <me@jacoscaz.com>",
+  "contributors": [],
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/beautifulinteractions/node-quadstore-sparql",
+  "bugs": "https://github.com/beautifulinteractions/node-quadstore-sparql/issues"
+}
