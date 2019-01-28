@@ -14,8 +14,6 @@
   ],
   "main": "index.js",
   "scripts": {
-    "precommit": "npm test",
-    "prepush": "npm test",
     "test": "nyc mocha",
     "browserify": "webpack-cli --config webpack.config.js --mode production"
   },
@@ -57,5 +55,11 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/beautifulinteractions/node-quadstore-sparql",
-  "bugs": "https://github.com/beautifulinteractions/node-quadstore-sparql/issues"
+  "bugs": "https://github.com/beautifulinteractions/node-quadstore-sparql/issues",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  }
 }
