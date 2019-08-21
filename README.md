@@ -12,7 +12,7 @@ All credit goes to the wonderful team maintaining Comunica.
 
 ## Current version
 
-Current version: **v5.0.2** [[See on NPM](https://www.npmjs.com/package/quadstore-sparql)].
+Current version: **v5.1.0** [[See on NPM](https://www.npmjs.com/package/quadstore-sparql)].
 
 `quadstore-sparql` is maintained alongside `quadstore` and versioned 
 accordingly. Equal major version numbers imply compatibility between
