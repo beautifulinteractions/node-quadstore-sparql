@@ -12,7 +12,7 @@ All credit goes to the wonderful team maintaining Comunica.
 
 ## Current version
 
-Current version: **v5.1.0** [[See on NPM](https://www.npmjs.com/package/quadstore-sparql)].
+Current version: **v6.0.0** [[See on NPM](https://www.npmjs.com/package/quadstore-sparql)].
 
 `quadstore-sparql` is maintained alongside `quadstore` and versioned 
 accordingly. Equal major version numbers imply compatibility between
@@ -28,7 +28,7 @@ the two modules.
 
 ## Usage
 
-### `SparqlEngine()`
+### `SparqlEngine()`
 
 The constructor expects an instance of `quadstore.RdfStore` as its only 
 argument.
@@ -82,25 +82,8 @@ according to the data format specified as the second argument.
 
 ## Browser
 
-`quadstore-sparql` can be used in browsers via bundling tools such as 
-`rollup`, `webpack`, `browserify` and their plugins.
+For in-browser usage refer to [quadstore's instructions][b1] on the same topic.
+This package uses `@comunica/actor-init-sparql-rdfjs`, which is a hefty package.
+Expect bundle sizes in the 1 - 2 MB range.
 
-The pre-assembled 
-[`quadstore-sparql.umd-bundle.js`](./quadstore-sparql.umd-bundle.js) 
-UMD bundle can be directly included into client-side projects where 
-[`quadstore`](https://github.com/beautifulinteractions/node-quadstore)
-is also present.
-
-```
-<script src="./quadstore.umd-bundle.js"></script>
-<script src="./quadstore-sparql.umd-bundle.js"></script>
-<script>
-    const db = quadstore.leveljs('db');
-    const store = new quadstore.RdfStore(db);
-    const engine = new window['quadstore-sparql'](store);
-</script>
-```
-
-The bundle is created with `webpack` (bundler), `babel` (translation to ES5) 
-and `uglifyjs` (minifier) and includes `@comunica/actor-init-sparql-rdfjs`,
-which makes it rather hefty (~ 1.6 MB).
+[b1]: https://github.com/beautifulinteractions/node-quadstore/tree/no-browser-bundle#browser
